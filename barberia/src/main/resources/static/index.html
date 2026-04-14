@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MonoBarberShop - Iniciar Sección</title>
+        
+    <style> 
+         body {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fuente más moderna*/
+              background-color: #000000; /* Fondo negro total*/
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              margin: 0;
+         }
+         
+         .container {
+             text-align: center;
+             widht: 350px; /* Ancho fijo para el formulario*/
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+         }
+         
+         /* Botón Registrarme superior */
+         .btn-register-top {
+             background-color: white;
+             color: black;
+             border: none;
+             padding: 5px 15px;
+             border-radius: 5px;
+             text-decoration: none;
+             font-size: 0.8rem;
+             margin-bottom: 30px; /*Espacio con el logo*/
+             align-self: flex-end; /*Alineado a la derecha */ 
+         }
+         
+         /* Logo y Titulo */
+         .logo {
+             width: 80px;
+             height: auto;
+             margin-bottom: 20px;
+         }
+         
+         h1 {
+             color: #d4af37; /* Dorado */
+             font-size: 2rem;
+             margin: 0;
+             text-transform: uppercase; /* Todo mayúsculas */
+         }
+         
+         .slogan {
+             color: #d4af37; /* Dorado */
+             font-size: 0.9rem;
+             margin: 5px 0 15px 0;
+         }
+         
+         .stars {
+             color: #d4af37; /* Dorado */
+             font-size: 1.2rem;  
+             margin-bottom: 20px;
+         }
+         
+         /* Formulario y Inputs */
+         form {
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             gap: 15px; /* Espacio entre inputs */    
+         }
+         
+         input[type="text"], input[type="password"] {
+             background-color: #00a800; /* Verde brillante */
+             color: white;
+             border: none;
+             padding: 15px;
+             border-radius: 10px;
+             font-size: 1rem;
+             text-align: center; /*Texto centrado */
+         }
+         
+         /*Placeholders en blanco */
+         input::placeholder {
+             color: rgba(255, 255, 255, 0.8);
+         }
+         
+         /* Link de recuperar contraseña */
+         .fogot-pass {
+             color: white;
+             text-decoration: none;
+             font-size: 0.8rem;
+             margin: 5px 0 20px 0;
+         }
+         
+         /* Botón de Google */
+         .btn-google {
+             background-color: #007bff; /* Azul Google */
+             color: white;
+             border: none;
+             padding: 15px;
+             border-radius: 10px;
+             font-size: 1rem;
+             font-weight: bold;
+             text-decoration: none;
+             text-transform: uppercase;
+             width: 100%;
+             box-sizing: border-box; /* Para que el padding no sume al ancho */
+         }
+         .btn-google:hover {
+              background-color: #0056b3;    
+         }
+         
+    </style>     
+    </head>
+    
+    <body>
+        <div class="container">
+            <a href="#" class="btn-register-top">Registrarme</a>
+            <img src="/images/logo.png" alt="MonobarberShop Logo" class="logo">
+            
+            <h1>MonobarberShop</h1>
+            <p class="slogan">Conéctate con tu estilo</p>
+            <div class="stars">★★★</div>
+            
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Usuario o correo" required>
+                <input type="password" name="pasword" placeholder="contraseña" required> 
+                
+                <input type="submit" style="display: none;">
+            </form>
+             
+            <a href="#" class="forgot-pass">recuperar contraseña</a>  
+            
+            <a href="#" class="btn-google">Iniciar con Google</a>
+        
+        </div>
+    </body>
+</html>
+    
+    
